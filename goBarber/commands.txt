@@ -1,0 +1,2 @@
+yarn add eslint -D
+yarn eslint --init
