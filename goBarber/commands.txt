@@ -1,2 +1,21 @@
 yarn add eslint -D
 yarn eslint --init
+
+
+Sequelize abstrai banco de dados
+yarn add sequelize
+yarn add sequelize-cli
+yarn add pg
+
+npx sequelize init
+npx sequelize migration:create --name=create-users
+
+
+DOCKER
+docker run --name database -p 25432:5432 -d -t kartoza/postgis
+
+You can then go on to use any normal postgresql commands against the container.
+Listar bancos: psql -h localhost -U docker -p 25432 -l
+Acessar banco: psql -h localhost -U docker -p 25432 -l -d postgres
+ -d para acessar banco
+criando novo banco de dados

@@ -17,7 +17,7 @@ class App {
 
   views () {
     nunjucks.configure(path.resolve(__dirname, 'app', 'views'), {
-      watch: this.isDev,
+      watch: this.isDev, // Só reconpila se estiver em desenvolvimento
       express: this.express,
       autoescape: true
     })
