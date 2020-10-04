@@ -4,10 +4,11 @@ module.exports = {
   username: 'docker',
   password: 'docker',
   database: 'gonodemodulo2',
-  operatorAliases: 'false',
+  port: '25432',
+  operatorAliases: false,
   define: {
     timestamps: true,
-    undersored: true,
+    underscored: true,
     underscoredAll: true
   }
 }

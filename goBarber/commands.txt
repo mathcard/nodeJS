@@ -16,6 +16,32 @@ docker run --name database -p 25432:5432 -d -t kartoza/postgis
 
 You can then go on to use any normal postgresql commands against the container.
 Listar bancos: psql -h localhost -U docker -p 25432 -l
-Acessar banco: psql -h localhost -U docker -p 25432 -l -d postgres
- -d para acessar banco
-criando novo banco de dados
+Acessar banco: psql -h localhost -U docker -p 25432 -d postgres
+Criar novo banco: sql...
+
+RODANDO MIGRATES
+npx sequelize db:migrate
+
+Trabalhando com criptografia
+yarn add bcrypt
+
+Trabalhando com uploads de arquivos
+yarn add multer
+
+Trabalhando com sessão
+yarn add express-session
+
+Para armazenar a sessão foi usado o filestorage (OFFLINE)
+ONLINE deve-se utilizar o redis junto ao express
+yarn add session-file-store
+
+
+No package.json, vai adicionado -e js, para que o servidor reinicie apenas com alterações JS
+middlewares auth e guest auxiliar no controle de sessão
+
+
+Mensgens de erro
+yarn add connect-flash
+
+
+Finalizei video 31
